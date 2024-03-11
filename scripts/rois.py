@@ -1,40 +1,58 @@
 import omero
 from omero.cli import cli_login
 from omero.gateway import BlitzGateway
-from omero.gateway import ColorHolder
 from omero_rois import mask_from_binary_image
-from omero.model import MaskI
-from omero.rtypes import (
-    rdouble,
-    rint,
-    rstring
-)
+import pathlib
+import re
+from tifffile import tifffile
 
+
+"""
+This script has a lot of dependencies, best create a micromamba env for it:
+
+# install micromamba
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+
+# add alias
+echo "alias mm=micromamba" >> ~/.bashrc
+source ~/.bashrc
+
+# create env and install stuff
+mm env create -n cli python=3.10
+mm activate cli
+mm install omero-py
+pip install ome_model scikit-image omero-rois
+"""
+
+
+PROJECT_NAME = "idr0151-clark-patterning/experimentA"
+PATH = "/bia-idr/S-BIAD582"
 
 RGBA = (255, 255, 0, 128)
+IMAGE_NAME_PATTERN = re.compile(r".+_\d\d\d.tif$")
 
 
-def getMaskImages(conn):
-    proj = conn.getObject('Project', attributes={'name': 'idr0151-clark-patterning/experimentA'})
+def get_mask_path(image_name, all_paths):
+    mask_image_name = image_name.replace(".tif", "_mask.tif")
+    for path in all_paths:
+        if str(path).endswith(mask_image_name):
+            return path
+    return None
+
+
+def getImages(conn):
+    proj = conn.getObject('Project', attributes={'name': PROJECT_NAME})
     for dataset in proj.listChildren():
         for img in dataset.listChildren():
-            if "_mask.tif" in img.getName():
+            if IMAGE_NAME_PATTERN.match(img.getName()):
                 yield img
-
-
-def getImage(conn, maskImg):
-    name = maskImg.getName().replace("_mask", "")
-    proj = conn.getObject('Project', attributes={'name': 'idr0151-clark-patterning/experimentA'})
-    for dataset in proj.listChildren():
-        for img in dataset.listChildren():
-            if img.getName() == name:
-                return img
 
 
 def save_roi(conn, im, roi):
     us = conn.getUpdateService()
     im = conn.getObject('Image', im.id)
     roi.setImage(im._obj)
+    print(f"Save ROI for image {img.getName()}")
     us.saveAndReturnObject(roi)
 
 
@@ -48,19 +66,24 @@ def delete_rois(conn, im):
         conn.deleteObjects("Roi", to_delete, deleteChildren=True, wait=True)
 
 
-def create_roi(img):
-    plane = img.getPrimaryPixels().getPlane()
+def create_roi(img, mask_paths):
+    mask_path = get_mask_path(img.getName(), mask_paths)
+    if not mask_path:
+        print(f"Could not find mask image for {img.getName()}")
+        return None
+    mask_image = tifffile.imread(mask_path)
     roi = omero.model.RoiI()
-    mask = mask_from_binary_image(plane > 0, rgba=RGBA, z=None, c=None, t=None, text=None)
+    mask = mask_from_binary_image(mask_image>0, rgba=RGBA, z=None, c=None, t=None, text=None)
     roi.addShape(mask)
     return roi
 
 
 with cli_login() as cli:
     conn = BlitzGateway(client_obj=cli.get_client())
-    for maskImg in getMaskImages(conn):
-        img = getImage(conn, maskImg)
-        print(f"{maskImg.getName()} - {img.getName()}")
+    root = pathlib.Path(PATH)
+    mask_paths = list(root.rglob("*.tif"))
+    for img in getImages(conn):
         delete_rois(conn, img)
-        roi = create_roi(maskImg)
-        save_roi(conn, img, roi)
+        roi = create_roi(img, mask_paths)
+        if roi:
+            save_roi(conn, img, roi)
