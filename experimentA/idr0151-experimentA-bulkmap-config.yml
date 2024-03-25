@@ -116,7 +116,6 @@ columns:
         - name: Comment [Targeted Protein Gene Identifier 1]
           clientname: Gene Identifier
           include: true
-          omitempty: false
         - name: Comment [Targeted Protein Gene Identifier 1]
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
@@ -124,7 +123,6 @@ columns:
         - name: Comment [Targeted Protein Gene Symbol 1]
           clientname: Gene Symbol
           include: true
-          omitempty: false
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
@@ -132,15 +130,13 @@ columns:
         - name: Comment [Targeted Protein Gene Identifier 2]
           clientname: Gene Identifier
           include: true
-          omitempty: false
         - name: Comment [Targeted Protein Gene Identifier 2]
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-        - name: Comment [Targeted Protein Gene Symbol 2
+        - name: Comment [Targeted Protein Gene Symbol 2]
           clientname: Gene Symbol
           include: true
-          omitempty: false
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
@@ -148,7 +144,6 @@ columns:
         - name: Comment [Targeted Protein Gene Identifier 3]
           clientname: Gene Identifier
           include: true
-          omitempty: false
         - name: Comment [Targeted Protein Gene Identifier 3]
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
@@ -156,7 +151,6 @@ columns:
         - name: Comment [Targeted Protein Gene Symbol 3]
           clientname: Gene Symbol
           include: true
-          omitempty: false
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
@@ -164,7 +158,6 @@ columns:
         - name: Comment [Targeted Transcript Gene Identifier 1]
           clientname: Gene Identifier
           include: true
-          omitempty: false
         - name: Comment [Targeted Transcript Gene Identifier 1]
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
@@ -172,7 +165,6 @@ columns:
         - name: Comment [Targered Transcript Gene Symbol 1]
           clientname: Gene Symbol
           include: true
-          omitempty: false
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
@@ -180,7 +172,6 @@ columns:
         - name: Comment [Targeted Transcript Gene Identifier 2]
           clientname: Gene Identifier
           include: true
-          omitempty: false
         - name: Comment [Targeted Transcript Gene Identifier 2]
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
@@ -188,7 +179,6 @@ columns:
         - name: Comment [Targered Transcript Gene Symbol 2]
           clientname: Gene Symbol
           include: true
-          omitempty: false
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
@@ -196,7 +186,6 @@ columns:
         - name: Comment [Targeted Transcript Gene Identifier 3]
           clientname: Gene Identifier
           include: true
-          omitempty: false
         - name: Comment [Targeted Transcript Gene Identifier 3]
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
@@ -204,7 +193,6 @@ columns:
         - name: Comment [Targered Transcript Gene Symbol 3]
           clientname: Gene Symbol
           include: true
-          omitempty: false
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
@@ -212,7 +200,6 @@ columns:
         - name: Comment [Targeted Transcript Gene Identifier 4]
           clientname: Gene Identifier
           include: true
-          omitempty: false
         - name: Comment [Targeted Transcript Gene Identifier 4]
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
@@ -220,7 +207,6 @@ columns:
         - name: Comment [Targered Transcript Gene Symbol 4]
           clientname: Gene Symbol
           include: true
-          omitempty: false
 
 
 advanced:
