@@ -1,0 +1,235 @@
+---
+name: idr0151-clark-patterning/experimentA
+version: 1
+
+defaults:
+  include: no
+  type: string
+  includeclient: yes
+  visible: yes
+  omitempty: yes
+
+columns:
+
+  - name: Characteristics [Genotype]
+    clientname: Genotype
+    include: yes
+
+  - name: Comment [Genotype Gene Identifier 1]
+    clientname: Genotype Gene Identifier 1
+    include: yes
+
+  - name: Comment [Genotype Gene Identifier 2]
+    clientname: Genotype Gene Identifier 2
+    include: yes
+
+  - name: Comment [Genotype Gene Symbol 1]
+    clientname: Genotype Gene Symbol 1
+    include: yes
+
+  - name: Comment [Genotype Gene Symbol 2]
+    clientname: Genotype Gene Symbol 2
+    include: yes
+
+  - name: Comment [Genotype Allele Identifier 1]
+    clientname: Genotype Allele Identifier 1
+    include: yes
+
+  - name: Comment [Genotype Allele Identifier 2]
+    clientname: Genotype Allele Identifier 2
+    include: yes
+
+  - name: Comment [Genotype Allele Symbol 1]
+    clientname: Genotype Allele Symbol 1
+    include: yes
+
+  - name: Comment [Genotype Allele Symbol 2]
+    clientname: Genotype Allele Symbol 2
+    include: yes
+
+  - name: Characteristics [Stock]
+    clientname: Stock
+    include: yes
+
+  - name: Characteristics [Strain]
+    clientname: Strain
+    include: yes
+
+  - name: Characteristics [Developmental Stage]
+    clientname: Developmental Stage
+    include: yes
+
+  - name: Comment [Developmental Stage - Substage]
+    clientname: Developmental Stage - Substage
+    include: yes
+
+  - name: Experimental Condition [Treatment]
+    clientname: Treatment
+    include: yes
+
+  - name: Experimental Condition [Targeted Protein 1]
+    clientname: Targeted Protein 1
+    include: yes
+
+  - name: Experimental Condition [Targeted Protein 2]
+    clientname: Targeted Protein 2
+    include: yes
+
+  - name: Experimental Condition [Targeted Protein 3]
+    clientname: Targeted Protein 3
+    include: yes
+
+  - name: Experimental Condition [Targeted Transcript 1]
+    clientname: Targeted Transcript 1
+    include: yes
+
+  - name: Experimental Condition [Targeted Transcript 2]
+    clientname: Targeted Transcript 2
+    include: yes
+
+  - name: Experimental Condition [Targeted Transcript 3]
+    clientname: Targeted Transcript 3
+    include: yes
+
+  - name: Experimental Condition [Targeted Transcript 4]
+    clientname: Targeted Transcript 4
+    include: yes
+
+  - name: Comment [Image File Type]
+    clientname: Image File Type
+    include: yes
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Targeted Protein Gene Identifier 1]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Targeted Protein Gene Identifier 1]
+          clientname: Gene Identifier URL
+          clientvalue: http://flybase.org/reports/{{ value|urlencode }}
+          include: true
+        - name: Comment [Targeted Protein Gene Symbol 1]
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Targeted Protein Gene Identifier 2]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Targeted Protein Gene Identifier 2]
+          clientname: Gene Identifier URL
+          clientvalue: http://flybase.org/reports/{{ value|urlencode }}
+          include: true
+        - name: Comment [Targeted Protein Gene Symbol 2
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Targeted Protein Gene Identifier 3]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Targeted Protein Gene Identifier 3]
+          clientname: Gene Identifier URL
+          clientvalue: http://flybase.org/reports/{{ value|urlencode }}
+          include: true
+        - name: Comment [Targeted Protein Gene Symbol 3]
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Targeted Transcript Gene Identifier 1]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Targeted Transcript Gene Identifier 1]
+          clientname: Gene Identifier URL
+          clientvalue: http://flybase.org/reports/{{ value|urlencode }}
+          include: true
+        - name: Comment [Targered Transcript Gene Symbol 1]
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Targeted Transcript Gene Identifier 2]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Targeted Transcript Gene Identifier 2]
+          clientname: Gene Identifier URL
+          clientvalue: http://flybase.org/reports/{{ value|urlencode }}
+          include: true
+        - name: Comment [Targered Transcript Gene Symbol 2]
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Targeted Transcript Gene Identifier 3]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Targeted Transcript Gene Identifier 3]
+          clientname: Gene Identifier URL
+          clientvalue: http://flybase.org/reports/{{ value|urlencode }}
+          include: true
+        - name: Comment [Targered Transcript Gene Symbol 3]
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Targeted Transcript Gene Identifier 4]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Targeted Transcript Gene Identifier 4]
+          clientname: Gene Identifier URL
+          clientvalue: http://flybase.org/reports/{{ value|urlencode }}
+          include: true
+        - name: Comment [Targered Transcript Gene Symbol 4]
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+
+advanced:
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/gene
+      keys:
+        - Gene Identifier
+        - Gene Symbol
