@@ -26,7 +26,7 @@ pip install ome_model scikit-image omero-rois
 
 
 PROJECT_NAME = "idr0151-clark-patterning/experimentA"
-PATH = "/bia-idr/S-BIAD582"
+PATH = "/uod/idr/filesets/idr0151-clark-patterning"
 
 RGBA = (255, 255, 0, 128)
 IMAGE_NAME_PATTERN = re.compile(r".+_\d\d\d.tif$")
@@ -35,7 +35,7 @@ IMAGE_NAME_PATTERN = re.compile(r".+_\d\d\d.tif$")
 def get_mask_path(image_name, all_paths):
     mask_image_name = image_name.replace(".tif", "_mask.tif")
     for path in all_paths:
-        if str(path).endswith(mask_image_name):
+        if str(path).lower().endswith(mask_image_name):
             return path
     return None
 
