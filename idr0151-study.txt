@@ -1,0 +1,105 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.	
+# STUDY DESCRIPTION SECTION																																	
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details					
+																																	
+Comment[IDR Study Accession]	idr0151																														
+Study Title	A timer gene network is spatially regulated by the terminal system in the Drosophila embryo																															
+Study Type	in-situ hybridization assay																																
+Study Type Term Source REF	EFO																																
+Study Type Term Accession	OBI_0001686																															
+Study Description	In insect embryos, anteroposterior patterning is coordinated by the sequential expression of the  timer  genes caudal, Dichaete, and odd-paired, whose expression dynamics correlate with the mode of segmentation. In Drosophila, the timer genes are expressed broadly across much of the blastoderm, which segments simultaneously, but their expression is delayed in a small  tail  region, just anterior to the hindgut, which segments during germband extension. Specification of the tail and the hindgut depends on the terminal gap gene tailless, but beyond this the regulation of the timer genes is poorly understood. We used a combination of multiplexed imaging, mutant analysis, and gene network modelling to resolve the regulation of the timer genes, identifying 11 new regulatory interactions and clarifying the mechanism of posterior terminal patterning. We propose that a dynamic Tailless expression gradient modulates the intrinsic dynamics of a timer gene cross-regulatory module, delineating the tail region and delaying its developmental maturation.	
+	
+Study Key Words	Developmental Biology	Genetics	Genomics	Drosophila	embryo	patterning	segmentation	blastoderm	terminal system	gene regulatory network	anteroposterior axis	regulation	timing																								
+Study Organism	Drosophila melanogaster																														
+Study Organism Term Source REF	NCBITaxon																																
+Study Organism Term Accession	7227																																
+Study Experiments Number	1																															
+Study External URL	
+Study BioImage Archive Accession	S-BIAD582																																
+Study Public Release Date																																
+																																	
+# Study Publication																																	
+Study PubMed ID	36524728																																
+Study Publication Title	A timer gene network is spatially regulated by the terminal system in the Drosophila embryo																																
+Study Author List	Clark E, Battistara M, Benton MA																															
+Study PMC ID	PMC10065802																																
+Study DOI	https://doi.org/10.7554/eLife.78902																																
+																																	
+# Study Contacts																																	
+Study Person Last Name	Benton	Clark																															
+Study Person First Name	Matthew	Erik																														
+Study Person Email	matthew.benton@gmail.com	ec491@cam.ac.uk																															
+Study Person Address	Developmental Biology Unit, EMBL, Germany	Department of Genetics, University of Cambridge, Cambridge, United Kingdom			
+Study Person ORCID	0000-0001-7953-0765	0000-0002-5588-796X																															
+Study Person Roles	submitter	submitter																																
+																																	
+# Study License and Data DOI																																	
+Study License	CC BY 4.0																												
+Study License URL	https://creativecommons.org/licenses/by/4.0/																																
+Study Copyright	Clark et al																															
+Study Data Publisher	University of Dundee																																
+Study Data DOI																																	
+																																	
+Term Source Name	NCBITaxon	EFO	CMPO	FBbi																													
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/																													
+																																	
+																																	
+# EXPERIMENT SECTION																																	
+# Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated.  Copy and paste the whole section below and fill out for the next experiment	
+																																	
+Experiment Number	1																	
+Comment[IDR Experiment Name]	idr0151-clark-patterning/experimentA	
+Experiment Sample Type	tissue																														
+Experiment Description	Fluorescent hybridisation chain reaction (HCR) RNA in situ and immunohistochemistry analysis of gene expression during embryonic patterning in wildtype and mutant Drosophila embryos.  						
+Experiment Size	4D Images:	Average Image Dimension: XYZC	Total Tb: 0.335																													
+Experiment Example Images	7a_18_wt_wg488-en546-slp594-odd647_029_mp.tif																																
+Experiment Imaging Method	confocal microscopy																															
+Experiment Imaging Method Term Source REF	Fbbi																																
+Experiment Imaging Method Term Accession	FBbi_00000251																																
+Experiment Organism																																
+Experiment Organism Term Source REF	NCBITaxon																																
+Experiment Organism Term Accession																																	
+Experiment Comments	Further detailed information on staining, mounting, imaging, etc is available with the published article (10.7554/eLife.78902) or on BioImage Archive (Accession S-BIAD582)																												
+																																	
+# assay files																																	
+Experiment Assay File	idr0151-experimentA-annotation																																
+Experiment Assay File Format	tab-delimited text																																
+Assay Experimental Conditions	Various genotypes were used. File names contain following abbreviations: genotype = 'wt' (wild-type), 'cadm' (cad[m-z+] mutant), 'cadmz' (cad[m-z-] mutant), 'cadz' (cad[m+z-] mutant), 'D' (D- mutant), 'fkh' (fkh- mutant), 'hkb' (hkb- mutant), 'opa' (opa- mutant), 'tll' (tll- mutant), 'tllopa' (tll- opa- double mutant), 'tor' (tor- mutant), or 'wg' (wg- mutant).																													
+Assay Experimental Conditions Term Source REF																																	
+Assay Experimental Conditions Term Accession																																	
+Quality Control Description	Occasional obviously atypical embryos (e.g. very small, or with abnormal patterns of mitotic division) were identified by visual inspection and discarded from the dataset.																															
+																																	
+# Protocols																																	
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol																													
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol																													
+Protocol Type Term Source REF	EFO	EFO																															
+Protocol Type Term Accession	EFO_0003789	EFO_0003969																															
+Protocol Description	
+																													
+																																	
+# Phenotypes																																	
+Phenotype Name																																	
+Phenotype Description																																
+Phenotype Score Type																																	
+Phenotype Term Source REF	CMPO																																
+Phenotype Term Name																																	
+Phenotype Term Accession			 																														
+																																	
+																																	
+# Feature Level Data Files (give individual file details unless there is one file per well)																																	
+Feature Level Data File Name																																	
+Feature Level Data File Format																																	
+Feature Level Data File Description																																	
+Feature Level Data Column Name																																	
+Feature Level Data Column Description	
+																																
+																																	
+#  Processed Data Files 																																	
+Processed Data File Name																																
+Processed Data File Format	tab-delimited text																																
+Processed Data File Description																																	
+Processed Data Column Name																																	
+Processed Data Column Type																																
+Processed Data Column Annotation Level																																
+Processed Data Column Description																																	
+Processed Data Column Link To Assay File																
