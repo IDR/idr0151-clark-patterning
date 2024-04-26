@@ -26,7 +26,7 @@ pip install ome_model scikit-image omero-rois
 
 
 PROJECT_NAME = "idr0151-clark-patterning/experimentA"
-PATH = "/uod/idr/filesets/idr0151-clark-patterning"
+PATH = "/uod/idr/filesets/idr0151-clark-patterning/S-BIAD582"
 
 RGBA = (255, 255, 0, 128)
 IMAGE_NAME_PATTERN = re.compile(r".+_\d\d\d.tif$")
