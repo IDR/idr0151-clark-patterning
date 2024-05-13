@@ -33,7 +33,7 @@ IMAGE_NAME_PATTERN = re.compile(r".+_\d\d\d.tif$")
 
 
 def get_mask_path(image_name, all_paths):
-    mask_image_name = image_name.replace(".tif", "_mask.tif")
+    mask_image_name = image_name.replace(".tif", "_mask.tif").lower()
     for path in all_paths:
         if str(path).lower().endswith(mask_image_name):
             return path
