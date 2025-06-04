@@ -99,6 +99,11 @@ columns:
     clientname: Image File Type
     include: yes
 
+  - name: Channels
+    clientname: Channels
+    include: yes
+
+
   ######################################################################
   # mapr groups
   ######################################################################
