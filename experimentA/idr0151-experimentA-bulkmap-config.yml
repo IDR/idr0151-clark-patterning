@@ -126,7 +126,6 @@ columns:
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-          omitempty: false
         - name: Comment [Targeted Protein Gene Symbol 1]
           clientname: Gene Symbol
           include: true
@@ -142,7 +141,6 @@ columns:
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-          omitempty: false
         - name: Comment [Targeted Protein Gene Symbol 2]
           clientname: Gene Symbol
           include: true
@@ -158,7 +156,6 @@ columns:
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-          omitempty: false
         - name: Comment [Targeted Protein Gene Symbol 3]
           clientname: Gene Symbol
           include: true
@@ -174,7 +171,6 @@ columns:
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-          omitempty: false
         - name: Comment [Targered Transcript Gene Symbol 1]
           clientname: Gene Symbol
           include: true
@@ -190,7 +186,6 @@ columns:
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-          omitempty: false
         - name: Comment [Targered Transcript Gene Symbol 2]
           clientname: Gene Symbol
           include: true
@@ -206,7 +201,6 @@ columns:
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-          omitempty: false
         - name: Comment [Targered Transcript Gene Symbol 3]
           clientname: Gene Symbol
           include: true
@@ -222,7 +216,6 @@ columns:
           clientname: Gene Identifier URL
           clientvalue: http://flybase.org/reports/{{ value|urlencode }}
           include: true
-          omitempty: false
         - name: Comment [Targered Transcript Gene Symbol 4]
           clientname: Gene Symbol
           include: true
