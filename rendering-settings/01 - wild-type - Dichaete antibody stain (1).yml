@@ -2,15 +2,15 @@
 channels:
     1:
         active: true
-        color: 808080
+        color: '808080'
         label: 'DAPI stain'
     2:
         active: true
-        color: 00FF00
+        color: '00FF00'
         label: 'D antibody (Alexa Fluor 555)'
     3:
         active: false
-        color: 808080
+        color: '808080'
         label: 'transmitted light'
 
 version: 2
