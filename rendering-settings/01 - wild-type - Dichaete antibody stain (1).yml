@@ -13,5 +13,4 @@ channels:
         color: 808080
         label: 'transmitted light'
 
-greyscale: false
 version: 2
