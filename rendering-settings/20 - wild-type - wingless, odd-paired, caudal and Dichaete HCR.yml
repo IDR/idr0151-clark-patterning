@@ -1,0 +1,19 @@
+---
+channels:
+    1:
+        active: true
+        color: '808080'
+    2:
+        active: true
+        color: '00FF00'
+    3:
+        active: true
+        color: 'FF00FF'
+    4:
+        active: true
+        color: '00FFFF'
+    5:
+        active: true
+        color: 'FFFF00'
+
+version: 2

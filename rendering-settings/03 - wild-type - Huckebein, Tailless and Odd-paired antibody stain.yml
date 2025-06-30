@@ -7,7 +7,10 @@ channels:
         active: true
         color: '00FF00'
     3:
-        active: false
-        color: '808080'
+        active: true
+        color: 'FF00FF'
+    4:
+        active: true
+        color: '00FFFF'
 
 version: 2
