@@ -16,7 +16,7 @@ Study Organism Term Accession	7227
 Study Experiments Number	1																															
 Study External URL	
 Study BioImage Archive Accession	S-BIAD582																																
-Study Public Release Date																																
+Study Public Release Date	2025-07-10																																
 																																	
 # Study Publication																																	
 Study PubMed ID	36524728																																
