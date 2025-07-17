@@ -59,7 +59,7 @@ Experiment Imaging Method Term Accession	FBbi_00000251
 Experiment Organism																																
 Experiment Organism Term Source REF	NCBITaxon																																
 Experiment Organism Term Accession																																	
-Experiment Comments	Further detailed information on staining, mounting, imaging, etc is available with the published article (10.7554/eLife.78902) or on BioImage Archive (Accession S-BIAD582)																												
+Experiment Comments																												
 																																	
 # assay files																																	
 Experiment Assay File	idr0151-experimentA-annotation																																
@@ -74,7 +74,7 @@ Protocol Name	growth protocol	treatment protocol	image acquisition and feature e
 Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol																													
 Protocol Type Term Source REF	EFO	EFO																															
 Protocol Type Term Accession	EFO_0003789	EFO_0003969																															
-Protocol Description	
+Protocol Description	Further detailed information on staining, mounting, imaging, etc is available with the published article (10.7554/eLife.78902) or on BioImage Archive (Accession S-BIAD582).  
 																													
 																																	
 # Phenotypes																																	
